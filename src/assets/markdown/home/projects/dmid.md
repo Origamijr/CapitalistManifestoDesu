@@ -1,0 +1,1 @@
+[Main Github](https://github.com/RetroCirce/DMID-Analysis-Music-Dynamics) and [Cross-Cultural Analysis Github](https://github.com/Origamijr/Cross-Cultural-Information-Dynamics)
