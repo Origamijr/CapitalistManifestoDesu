@@ -4,10 +4,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [{
   path: 'home',
-  loadChildren: '../modules/home/home.module#HomeModule'
+  loadChildren: () => import('../modules/home/home.module').then(m => m.HomeModule)
 }, {
   path: 'f',
-  loadChildren: '../modules/farrago/farrago.module#FarragoModule'
+  loadChildren: () => import('../modules/farrago/farrago.module').then(m => m.FarragoModule)
 }, {
   path: '',
   redirectTo: 'home',
