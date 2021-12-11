@@ -53,6 +53,10 @@
 </app-collapsible>
 
 
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/dmid.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'ai', 'complete', 'research', 'collab', 'python'])">
+</app-markdown-wrapper>
+
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/125-cyber-city.md'" class="bottom-separator"
     *ngIf="!filtered(['graphics', 'complete', 'class', 'collab', 'c++', 'game'])">
 </app-markdown-wrapper>
@@ -70,7 +74,7 @@
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/machine-improv.md'" class="bottom-separator"
-    *ngIf="!filtered(['music', 'ai', 'progress', 'research', 'solo', 'python', 'pd'])">
+    *ngIf="!filtered(['music', 'ai', 'complete', 'research', 'solo', 'python', 'pd'])">
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/discord-bots.md'" class="bottom-separator"
