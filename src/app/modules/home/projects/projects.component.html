@@ -53,8 +53,20 @@
 </app-collapsible>
 
 
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/music-fun.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'graphics', 'progress', 'personal', 'solo', 'python', 'opengl'])">
+</app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/discord-bots.md'" class="bottom-separator"
+    *ngIf="!filtered(['ai', 'misc', 'progress', 'personal', 'solo', 'python', 'c#', 'f#', 'game'])">
+</app-markdown-wrapper>
+
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/dmid.md'" class="bottom-separator"
     *ngIf="!filtered(['music', 'ai', 'complete', 'research', 'collab', 'python'])">
+</app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/203-snmf.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'complete', 'class', 'collab', 'python'])">
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/125-cyber-city.md'" class="bottom-separator"
@@ -69,16 +81,8 @@
     *ngIf="!filtered(['music', 'complete', 'class', 'solo', 'pd', 'c'])">
 </app-markdown-wrapper>
 
-<app-markdown-wrapper [filename]="'assets/markdown/home/projects/music-fun.md'" class="bottom-separator"
-    *ngIf="!filtered(['music', 'graphics', 'progress', 'personal', 'solo', 'python', 'opengl'])">
-</app-markdown-wrapper>
-
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/machine-improv.md'" class="bottom-separator"
     *ngIf="!filtered(['music', 'ai', 'complete', 'research', 'solo', 'python', 'pd'])">
-</app-markdown-wrapper>
-
-<app-markdown-wrapper [filename]="'assets/markdown/home/projects/discord-bots.md'" class="bottom-separator"
-    *ngIf="!filtered(['ai', 'misc', 'progress', 'personal', 'solo', 'python', 'c#', 'f#', 'game'])">
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/143-virtual-env.md'" class="bottom-separator"
