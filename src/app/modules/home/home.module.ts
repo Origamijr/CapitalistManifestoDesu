@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SharedModule } from '../../shared/shared.module';
 import { ProjectsComponent } from './projects/projects.component';
+import { ResearchComponent } from './research/research.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ResearchComponent
   ]
 })
 export class HomeModule { }
