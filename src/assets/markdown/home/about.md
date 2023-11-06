@@ -2,6 +2,8 @@
 
 <img src="assets/images/portrait.png" alt="me" width="30%" height="YYY" class="center"/>
 
+***I'm so sorry for being outdated. I promise to redo this site entirely sometime within the next year***
+
 ## Introduction
 
 Hi. Welcome to my site. Forgive the poor design as I am quite a novice at web development. Regardless, I am a big fan of the DIY mentality, so I thought I'd have a go at building from scratch (using Angular as a framework).
