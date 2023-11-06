@@ -11,7 +11,7 @@
         Status: 
         <app-filter-toggle-button (toggled)="setFilter($event, 'complete')">Complete</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'progress')">In Progress</app-filter-toggle-button>
-        <app-filter-toggle-button (toggled)="setFilter($event, 'hiatus')">Hiatus</app-filter-toggle-button>
+        <app-filter-toggle-button (toggled)="setFilter($event, 'hiatus')">On Hold</app-filter-toggle-button>
     </div>
 
     <div class="filter-container">
@@ -33,7 +33,6 @@
         <app-filter-toggle-button (toggled)="setFilter($event, 'python')">Python</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'c++')">C++</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'c#')">C#</app-filter-toggle-button>
-        <app-filter-toggle-button (toggled)="setFilter($event, 'f#')">F#</app-filter-toggle-button>
         <app-filter-toggle-button (toggled)="setFilter($event, 'c')">C</app-filter-toggle-button>
     </div>
 
@@ -53,12 +52,16 @@
 </app-collapsible>
 
 
-<app-markdown-wrapper [filename]="'assets/markdown/home/projects/music-fun.md'" class="bottom-separator"
-    *ngIf="!filtered(['music', 'graphics', 'progress', 'personal', 'solo', 'python', 'opengl'])">
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/minesweeper.md'" class="bottom-separator"
+    *ngIf="!filtered(['misc', 'game', 'progress', 'personal', 'solo', 'python'])">
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/discord-bots.md'" class="bottom-separator"
-    *ngIf="!filtered(['ai', 'misc', 'progress', 'personal', 'solo', 'python', 'c#', 'f#', 'game'])">
+    *ngIf="!filtered(['ai', 'misc', 'progress', 'personal', 'solo', 'python', 'c#', 'game'])">
+</app-markdown-wrapper>
+
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/music-fun.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'graphics', 'hiatus', 'personal', 'solo', 'python', 'opengl'])">
 </app-markdown-wrapper>
 
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/dmid.md'" class="bottom-separator"
