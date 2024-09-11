@@ -52,6 +52,10 @@
 </app-collapsible>
 
 
+<app-markdown-wrapper [filename]="'assets/markdown/home/projects/raspppy.md'" class="bottom-separator"
+    *ngIf="!filtered(['music', 'progress', 'personal', 'solo', 'python'])">
+</app-markdown-wrapper>
+
 <app-markdown-wrapper [filename]="'assets/markdown/home/projects/minesweeper.md'" class="bottom-separator"
     *ngIf="!filtered(['misc', 'game', 'progress', 'personal', 'solo', 'python'])">
 </app-markdown-wrapper>
